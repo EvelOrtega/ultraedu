@@ -1,20 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-@keyframes slide {
-  0% {
-  }
-  25% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-100vw);
-  }
-  75% {
-    transform: translateX(-200vw);
-  }
-  100% {
-    transform: translateX(-100vw);
-  }
-}
+
 html {
   width: 100vw;
   margin: 0;
@@ -105,6 +90,21 @@ h3 {
 }
 .login button:hover {
   transform: scale(110%);
+  cursor: pointer;
+}
+
+.login-modal {
+  width: fit-content;
+  height: fit-content;
+  padding: 30px;
+  position: fixed;
+  z-index: 110;
+  top: 45px;
+  right: 60px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+  border-radius: 0 0 12px 12px;
+  transform: scaleZ(0);
 }
 
 .main-menu {
@@ -171,48 +171,51 @@ h3 {
 .pages {
   width: 64%;
 }
-.carrousel-container {
+.carousel-container {
   width: fit-content;
   display: flex;
   padding: 0;
   overflow: hidden;
 }
-.carrousel-animation {
-  /* place holder até vir o java*/
-  transform: translateX(0);
-  animation-name: slide;
-  animation-duration: 20s;
-  animation-direction: normal;
-  animation-play-state: running;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-.item-carrousel {
+
+.item-carousel {
   width: 100vw;
   height: 100vh;
   box-sizing: border-box;
 }
-.carrousel-cover {
+.carousel-cover {
   width: 100%;
   height: 100%;
   background-color: rgba(21, 21, 21, 0.7);
 }
-.text-carrousel {
+.text-carousel {
   padding-top: 30vh;
   width: 40%;
   text-align: center;
 }
-.text-carrousel h2 {
+.text-carousel h2 {
   font-weight: 800;
   font-size: 40px;
 }
-.text-carrousel button {
+.text-carousel button {
   width: 230px;
   height: 50px;
   border-radius: 32px;
   border: none;
 }
-
+.carousel-dots {
+  position: absolute;
+  top: 100vh;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.carousel-dots .glider-dot {
+  background-color: #d3d4d9;
+}
+.carousel-dots .active {
+  background-color: #0e6ba8;
+  transform: scale(150%);
+}
 .courses-gallery {
   width: 100%;
   display: grid;
@@ -246,19 +249,23 @@ h3 {
 /*screen size*/
 .half-section {
   width: 100%;
-  height: 50vh;
+  height: fit-content;
+  padding: 10vh 0;
 }
 .half-half-section {
   width: 100%;
-  height: 26vh;
+  height: fit-content;
+  padding: 5vh 0;
 }
 .simple-section {
   width: 100%;
-  height: 100vh;
+  height: fit-content;
+  padding: 20vh 0;
 }
 .double-section {
   width: 100%;
-  height: 200vh;
+  height: fit-content;
+  padding: 30vh 0;
 }
 .dinamic-section {
   width: 100%;
@@ -337,7 +344,7 @@ h3 {
   font-size: 14px;
   font-weight: 600;
 }
-.simple-tittle {
+.simple-title {
   font-weight: 800;
   font-size: 40px;
 }
@@ -346,6 +353,9 @@ h3 {
 }
 .text-left {
   text-align: left;
+}
+.margin-top-10 {
+  margin-top: 10px;
 }
 .text-box {
   width: 30vw;
@@ -366,6 +376,7 @@ h3 {
 }
 .square-button:hover {
   transform: scale(110%);
+  cursor: pointer;
 }
 .ballon-button {
   width: 200px;
@@ -410,4 +421,9 @@ h3 {
 .spacer {
   width: 60px;
   height: 3px;
+}
+
+/**/
+.open-modal {
+  transform: scaleZ(100%);
 }
