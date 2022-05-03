@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultra.edu - Cursos</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <header class="flex-box flex-column">
+    <div class="social-login bg-l-blue flex-box">
+      <div class="social-container">
+        <ul class="social">
+          <li><span class="simple-text color-white"> Nos siga:</span></li>
+          <li>
+            <a href="#"><img src="assets/s1.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/s2.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/s3.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/s4.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/s5.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="login-container">
+        <ul class="login">
+          <li>
+            <a href="#">
+              <span class="simple-text color-white">Criar conta</span></a
+            >
+          </li>
+          <li>
+            <button
+              onclick="toggleModal()"
+              class="bg-white color-l-blue simple-text"
+              id="login-button"
+            >
+              Login
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="main-menu bg-white flex-box flex-center flex-space-around">
+      <div class="logo-container flex-box">
+        <div class="logo">
+          <img src="assets/l1.png" alt="" />
+        </div>
+        <div class="logo-text color-l-blue">
+          <p>Ultra<span class="color-dark">.edu</span></p>
+        </div>
+      </div>
+      <ul class="flex-box flex-center pages flex-space-around">
+        <li>
+          <a href="index.html"
+            ><span class="simple-text color-dark">home</span></a
+          >
+        </li>
+        <li>
+          <a href="#"><span class="simple-text color-d-blue">cursos</span></a>
+        </li>
+        <li>
+          <a href="#"></a><span class="simple-text color-dark">eventos</span>
+        </li>
+        <li>
+          <a href="blog.html"
+            ><span class="simple-text color-dark">blog</span></a
+          >
+        </li>
+        <li>
+          <a href="#"></a><span class="simple-text color-dark">contato</span>
+        </li>
+        <li>
+          <form action="" class="procurar flex-box flex-center">
+            <input class="search-bar" type="text" placeholder="procurar" />
+
+            <div class="search-button flex-box flex-center">
+              <div class="icone lupa"></div>
+            </div>
+          </form>
+        </li>
+      </ul>
+    </div>
+
+    <div
+      class="login-modal bg-white flex-box flex-column flex-center"
+      id="j-login-modal"
+    >
+      <span class="simple-text">E-mail</span>
+      <input
+        class="email-bar margin-top-10"
+        type="text"
+        placeholder="exemplo@ex.com"
+      />
+      <span class="simple-text margin-top-10" p>Senha</span>
+      <input class="email-bar margin-top-10" placeholder="senha" type="text" />
+      <a href="#">
+        <span class="simple-text-small"> esqueci minha senha</span>
+      </a>
+      <div class="flex-box">
+        <button class="simple-text square-button bg-l-blue margin-top-10">
+          Entrar
+        </button>
+      </div>
+    </div>
+
+    <section class="half-half-section bg-light flex-box flex-space-around">
+      <div class="text-box-2 flex-box flex-justify flex-column text-box-2">
+        <div class="logo-container flex-box">
+          <div class="logo">
+            <img src="assets/l1.png" alt="" />
+          </div>
+          <div class="logo-text color-l-blue">
+            <p>Ultra<span class="color-dark">.edu</span></p>
+          </div>
+        </div>
+        <div class="">
+          <span class="simple-text-small color-dark">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
+            aut temporibus recusandae atque eum voluptatibus.
+          </span>
+        </div>
+        <div>
+          <ul class="social flex-space-around flex-space-between padding-zero">
+            <li>
+              <a href="#"><img src="assets/s1.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/s2.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/s3.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/s4.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="assets/s5.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex-box flex-column text-box-2">
+        <h2>Ultimas notícias</h2>
+        <span class="simple-text-small">Lorem ipsum dolor sit amet</span>
+        <span class="simple-text-small">Architecto praesentium facere </span>
+        <span class="simple-text-small">Lorem ipsum dolor sit amet</span>
+        <span class="simple-text-small">Lorem ipsum dolor sit amet</span>
+        <span class="simple-text-small">Architecto praesentium facere </span>
+        <span class="simple-text-small">Lorem ipsum dolor sit amet</span>
+      </div>
+      <div class="flex-box flex-column text-box-2">
+        <h2>Ultimos Cursos</h2>
+        <span class="simple-text-small">Lorem ipsum dolor sit amet</span>
+        <span class="simple-text-small">Architecto praesentium facere </span>
+        <span class="simple-text-small">Lorem ipsum dolor sit amet</span>
+        <span class="simple-text-small">Lorem ipsum dolor sit amet</span>
+        <span class="simple-text-small">Architecto praesentium facere </span>
+        <span class="simple-text-small">Lorem ipsum dolor sit amet</span>
+      </div>
+      <div class="flex-box flex-column text-box-2">
+        <h2>Assine nosso feed!</h2>
+        <span class="simple-text-small"
+          >Lorem, Id, natus. Voluptates impedit earum magni rem minima!</span
+        >
+        <form action="" class="flex-box flex-center">
+          <input
+            class="email-bar margin-top-10"
+            type="text"
+            placeholder="e-mail"
+          />
+        </form>
+        <button
+          class="square-button simple-text bg-dark color-light margin-top-10"
+        >
+          Enviar!
+        </button>
+      </div>
+    </section>
+  </body>
+  <footer class="bg-dark flex-box flex-center flex-justify">
+    <span class="simple-text color-light"
+      >Criado e Desenvolvido por Evel Ortega</span
+    >
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+  <script src="main.js"></script>
+</html>

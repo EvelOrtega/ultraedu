@@ -116,6 +116,9 @@ h3 {
   margin-bottom: -20px;
   z-index: 100;
 }
+.main-menu span:hover {
+  color: #9e2b25;
+}
 .logo-container {
   width: 270px;
 }
@@ -243,7 +246,36 @@ h3 {
   width: 20px;
   height: 20px;
 }
-
+.blog-posts {
+  padding: 0 30px;
+  justify-items: center;
+}
+.img-blog-left {
+  width: 400px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.img-blog-right {
+  width: 400px;
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.shop-container {
+  padding: 20px 20px;
+  border-radius: 20px;
+}
+.shop-section {
+  padding: 30px;
+  box-sizing: border-box;
+}
+.info-bar-shop {
+  width: 400px;
+  margin-top: 60%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
 /*Utility*/
 
 /*screen size*/
@@ -274,6 +306,8 @@ h3 {
 }
 .padding-zero {
   padding: 0;
+}
+.throw-down {
 }
 
 /*flex*/
@@ -356,6 +390,9 @@ h3 {
 }
 .margin-top-10 {
   margin-top: 10px;
+}
+.margin-sides-10 {
+  margin: 0 10px;
 }
 .text-box {
   width: 30vw;
