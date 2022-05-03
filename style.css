@@ -265,6 +265,7 @@ h3 {
 .shop-container {
   padding: 20px 20px;
   border-radius: 20px;
+  box-sizing: border-box;
 }
 .shop-section {
   padding: 30px;
@@ -272,9 +273,11 @@ h3 {
 }
 .info-bar-shop {
   width: 400px;
-  margin-top: 60%;
+
   margin-right: 20px;
-  margin-bottom: 20px;
+
+  padding: 0 0 0 40px;
+  box-sizing: border-box;
 }
 
 /*ids*/
