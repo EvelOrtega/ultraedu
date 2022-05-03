@@ -9,6 +9,7 @@
 <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
+  
   <header class="flex-box flex-column">
     <div class="social-login bg-l-blue flex-box">
       <div class="social-container">
@@ -31,13 +32,14 @@
           </li>
         </ul>
       </div>
+
       <div class="login-container">
         <ul class="login">
           <li>
             <a href="#">
-              <span class="simple-text color-white">Criar conta</span></a
+              <span class="simple-text color-white" id="criar-conta">Criar conta</span></a
             >
-          </li>
+          
           <li>
             <button onclick="toggleModal()" class="bg-white color-l-blue simple-text" id="login-button">Login</button>
           </li>
@@ -46,6 +48,17 @@
     </div>
   </header>
   <body >
+
+
+    <!--Modal de  Cadastro-->
+    <section>
+      <div id="close-cadastro-modal-button" class="color-white simple-title display-none">X</div>
+     <iframe  class="display-none" src="Iframecadastro.html" frameborder="0" id="modal-cadastro-overlay">
+     </iframe>  
+    </section>
+    <!--Modal de Cadastro-->
+
+    <!--Menu Principal-->
     <div class="main-menu bg-white flex-box flex-center flex-space-around">
       <div class="logo-container flex-box">
         <div class="logo">
@@ -82,7 +95,7 @@
         </li>
       </ul>
     </div>
-
+    <!--Menu Principal fim-->
 
 
     <section class="simple-section bg-dark padding-zero">
@@ -177,7 +190,7 @@
           <input class="email-bar margin-top-10" placeholder="senha" type="text">
           <a href="#"> <span class="simple-text-small"> esqueci minha senha</span> </a>
           <div class="flex-box">
-            <button class="simple-text square-button bg-l-blue margin-top-10" >Entrar</button>
+            <button class="simple-text square-button bg-l-blue margin-top-10 color-white" >Entrar</button>
           </div>
         </div>
  

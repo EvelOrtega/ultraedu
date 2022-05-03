@@ -38,7 +38,7 @@
         <ul class="login">
           <li>
             <a href="#">
-              <span class="simple-text color-white">Criar conta</span></a
+              <span  onclick="toggleCadastro()" class="simple-text color-white"  id="criar-conta">Criar conta</span></a
             >
           </li>
           <li>
@@ -55,6 +55,7 @@
     </div>
   </header>
   <body>
+    <!--Menu Principal-->
     <div class="main-menu bg-white flex-box flex-center flex-space-around">
       <div class="logo-container flex-box">
         <div class="logo">
@@ -95,6 +96,17 @@
         </li>
       </ul>
     </div>
+    <!--Menu Principal fim-->
+ 
+    <!--Modal de  Cadastro-->
+    <section>
+      <div onclick="toggleCadastro()" id="close-cadastro-modal-button" class="color-white simple-title display-none">X</div>
+     <iframe  class="display-none" src="Iframecadastro.html" frameborder="0" id="modal-cadastro-overlay">
+     </iframe>  
+    </section>
+    <!--Modal de Cadastro-->
+
+    
     <section class="half-half-section bg-dark">
       <li>
         <form action="" class="procurar flex-box flex-center margin-sides-10">
@@ -230,7 +242,7 @@
         <span class="simple-text-small"> esqueci minha senha</span>
       </a>
       <div class="flex-box">
-        <button class="simple-text square-button bg-l-blue margin-top-10">
+        <button class="simple-text square-button bg-l-blue margin-top-10 color-white">
           Entrar
         </button>
       </div>

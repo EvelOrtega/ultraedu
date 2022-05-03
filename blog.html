@@ -38,7 +38,7 @@
         <ul class="login">
           <li>
             <a href="#">
-              <span class="simple-text color-white">Criar conta</span></a
+              <span onclick="toggleCadastro()" class="simple-text color-white" id="criar-conta">Criar conta</span></a
             >
           </li>
           <li>
@@ -55,42 +55,53 @@
     </div>
   </header>
   <body>
-    <div class="main-menu bg-white flex-box flex-center flex-space-around">
-      <div class="logo-container flex-box">
-        <div class="logo">
-          <img src="assets/l1.png" alt="" />
-        </div>
-        <div class="logo-text color-l-blue">
-          <p>Ultra<span class="color-dark">.edu</span></p>
-        </div>
-      </div>
-      <ul class="flex-box flex-center pages flex-space-around">
-        <li>
-          <a href="index.html"><span class="simple-text color-dark">home</span></a>
-        </li>
-        <li>
-          <a href="cursos.html"><span class="simple-text color-dark">cursos</span></a>
-        </li>
-        <li>
-          <a href="#"></a><span class="simple-text color-dark">eventos</span>
-        </li>
-        <li>
-          <a href="#"><span class="simple-text color-d-blue bold">blog</span></a>
-        </li>
-        <li>
-          <a href="#"></a><span class="simple-text color-dark">contato</span>
-        </li>
-        <li>
-          <form action="" class="procurar flex-box flex-center">
-            <input class="search-bar" type="text" placeholder="procurar" />
-
-            <div class="search-button flex-box flex-center">
-              <div class="icone lupa"></div>
+        <!--Menu Principal-->
+        <div class="main-menu bg-white flex-box flex-center flex-space-around">
+            <div class="logo-container flex-box">
+                <div class="logo">
+                <img src="assets/l1.png" alt="" />
+                </div>
+                <div class="logo-text color-l-blue">
+                <p>Ultra<span class="color-dark">.edu</span></p>
+                </div>
             </div>
-          </form>
-        </li>
-      </ul>
+            <ul class="flex-box flex-center pages flex-space-around">
+                <li>
+                <a href="index.html"><span class="simple-text color-dark">home</span></a>
+                </li>
+                <li>
+                <a href="cursos.html"><span class="simple-text color-dark">cursos</span></a>
+                </li>
+                <li>
+                <a href="#"></a><span class="simple-text color-dark">eventos</span>
+                </li>
+                <li>
+                <a href="#"><span class="simple-text color-d-blue bold">blog</span></a>
+                </li>
+                <li>
+                <a href="#"></a><span class="simple-text color-dark">contato</span>
+                </li>
+                <li>
+                <form action="" class="procurar flex-box flex-center">
+                    <input class="search-bar" type="text" placeholder="procurar" />
+
+                    <div class="search-button flex-box flex-center">
+                    <div class="icone lupa"></div>
+                    </div>
+                </form>
+                </li>
+            </ul>
     </div>
+    <!--Menu Principal Fim-->
+
+    
+    <!--Modal de  Cadastro-->
+    <section>
+        <div onclick="toggleCadastro()" id="close-cadastro-modal-button" class="color-white simple-title display-none">X</div>
+       <iframe  class="display-none" src="Iframecadastro.html" frameborder="0" id="modal-cadastro-overlay">
+       </iframe>  
+    </section>
+      <!--Modal de Cadastro-->
 
     <section class="half-section bg-white">
       <article class="blog-posts">
@@ -294,28 +305,29 @@
       </div>
         </article>
       </section>
-
-    <div
-      class="login-modal bg-white flex-box flex-column flex-center"
-      id="j-login-modal"
-    >
-      <span class="simple-text">E-mail</span>
-      <input
-        class="email-bar margin-top-10"
-        type="text"
-        placeholder="exemplo@ex.com"
-      />
-      <span class="simple-text margin-top-10" p>Senha</span>
-      <input class="email-bar margin-top-10" placeholder="senha" type="text" />
-      <a href="#">
-        <span class="simple-text-small"> esqueci minha senha</span>
-      </a>
-      <div class="flex-box">
-        <button class="simple-text square-button bg-l-blue margin-top-10">
-          Entrar
-        </button>
-      </div>
-    </div>
+        <!--Modal de login-->
+            <div
+            class="login-modal bg-white flex-box flex-column flex-center"
+            id="j-login-modal"
+            >
+            <span class="simple-text">E-mail</span>
+            <input
+                class="email-bar margin-top-10"
+                type="text"
+                placeholder="exemplo@ex.com"
+            />
+            <span class="simple-text margin-top-10" p>Senha</span>
+            <input class="email-bar margin-top-10" placeholder="senha" type="text" />
+            <a href="#">
+                <span class="simple-text-small"> esqueci minha senha</span>
+            </a>
+            <div class="flex-box">
+                <button class="simple-text square-button bg-l-blue margin-top-10 color-white">
+                Entrar
+                </button>
+            </div>
+            </div>
+        <!--Modal de login fim-->
 
     <section class="half-half-section bg-light flex-box flex-space-around">
       <div class="text-box-2 flex-box flex-justify flex-column text-box-2">
