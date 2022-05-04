@@ -41,7 +41,7 @@
             >
           
           <li>
-            <button onclick="toggleModal()" class="bg-white color-l-blue simple-text" id="login-button">Login</button>
+            <button onclick="toggleModal()" class="bg-white color-l-blue simple-text botão-login" id="login-button">Login</button>
           </li>
         </ul>
       </div>
@@ -516,8 +516,11 @@
   <footer class="bg-dark flex-box flex-center flex-justify">
     <span class="simple-text color-light">Criado e Desenvolvido por Evel Ortega</span>
   </footer>
-  
 
+  
   <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
   <script src="main.js"></script>
+  <script>
+    window.onscroll = closeModal;
+  </script>
 </html>
