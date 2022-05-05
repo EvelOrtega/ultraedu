@@ -298,7 +298,7 @@ h3 {
 }
 #modal-cadastro {
   width: 350px;
-  height: 700px;
+  height: fit-content;
   padding: 30px;
   box-sizing: border-box;
   border-radius: 20px;
